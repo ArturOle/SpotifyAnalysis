@@ -50,6 +50,9 @@ class Server:
         csv_file = pd.read_csv(csv_name, sep=separator)
         csv_file.to_sql(csv_name, self.connection, if_exists="replace")
 
+    def export_json(self, table_name):
+        pass
+
     def disconnect(self):
         if self.connection:
             self.connection.close()
