@@ -26,6 +26,32 @@ or
 python -m pip install -r requirements.txt
 ```
 
+## Usage:
+
+0) Launch Python in the console
+
+1) Import db_manager as db
+```py
+>>> import db_manager as db 
+```
+
+2) Create server
+```py
+>>> server = db.Server("spotify.db")
+```
+
+3) Load the csv
+```py
+>>> server.load_csv("#NAME_FOR_TABLE_HERE#", separator="#IF_YOU HAVE CUSTOM SEPARATOR IN THE CSV#")
+```
+
+4) Run queries
+```py
+>>> server.query("#YOUR SQL QUERY HERE#")
+or
+>>> server.query_script("#path/to/sql/query.sql#")
+```
+
 ## Datasets in question:
 
 | Name | Link |

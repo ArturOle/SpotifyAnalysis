@@ -63,4 +63,4 @@ class Server:
 
 
 if __name__ == '__main__':
-    server = Server("cancer.db").connect()
+    server = Server("spotify.db").connect()
