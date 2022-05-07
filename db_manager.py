@@ -46,8 +46,9 @@ class Server:
         for i in excel_file.sheet_names:
             excel_file.parse(sheet_name=i).to_sql(i, self.connection, if_exists="replace")
 
-    def load_csv(self, csv_name):
-        pass
+    def load_csv(self, csv_name, separator=','):
+        csv_file = pd.read_csv(csv_name, sep=separator)
+        csv_file.to_sql(csv_name, self.connection, if_exists="replace")
 
     def disconnect(self):
         if self.connection:
