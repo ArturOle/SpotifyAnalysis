@@ -11,7 +11,6 @@ CREATE TABLE Revenues(
     song_name varchar(32),
 
     FOREIGN KEY (song_prop_id) REFERENCES SongProps(song_prop_id),
-    FOREIGN KEY (date_id) REFERENCES Dates(date_id),
     FOREIGN KEY (song_id) REFERENCES Tops(song_id),
     FOREIGN KEY (pricing_id) REFERENCES Pricing(pricing_id),
     FOREIGN KEY (artist_id) REFERENCES Artists(artist_id)
@@ -28,7 +27,7 @@ CREATE TABLE SongProps(
     song_prop_id int not NULL,
     nrgy int(4),
     dnce int(4),
-    dB float,
+    dB int(4),
     live int(4),
     bmp int(4),
     val int(4),
@@ -36,6 +35,7 @@ CREATE TABLE SongProps(
     spch int(4),
     pop int(4),
     dur int(4),
+    ensemble varchar(10),
 
     genre_1 varchar(16) not NULL,
     genre_2 varchar(16),
@@ -43,14 +43,6 @@ CREATE TABLE SongProps(
     release_date year,
     PRIMARY KEY (song_prop_id)
 )
-
--- CREATE TABLE Dates(
---     date_id int NOT NULL,
---     year int,
---     month int,
---     day int,
---     PRIMARY KEY (date_id)
--- )
 
 CREATE TABLE Tops(
     song_id int not null,
