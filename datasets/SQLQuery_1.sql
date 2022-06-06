@@ -36,10 +36,12 @@ CREATE TABLE SongProps(
     dur int(4),
     ensemble varchar(10),
 
+
     genre_1 varchar(16) not NULL,
     genre_2 varchar(16),
     genre_3 varchar(16),
-    release_date year,
+    release_year year,
+    top_year year,
     PRIMARY KEY (song_prop_id)
 )
 
