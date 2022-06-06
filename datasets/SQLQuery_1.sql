@@ -4,7 +4,6 @@ CREATE TABLE Revenues(
     song_id int,
     song_prop_id int,
     pricing_id int,
-    date_id int,
     artist_id int,
     profit int,
     streams int,
@@ -47,7 +46,6 @@ CREATE TABLE SongProps(
 CREATE TABLE Tops(
     song_id int not null,
     song_position int not null,
-    region varchar(32),
     creation_date datetime,
     PRIMARY KEY (song_id)
 )
