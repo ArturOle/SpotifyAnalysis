@@ -1,6 +1,6 @@
 
 
-CREATE TABLE Revenue(
+CREATE TABLE Revenues(
     song_id int,
     song_prop_id int,
     pricing_id int,
@@ -31,10 +31,16 @@ CREATE TABLE SongProps(
     dB int,
     live int,
     bmp int,
+    val int,
+    acous int,
+    spch int,
+    pop int,
+    dur int,
+
     genre_1 varchar(16) not NULL,
     genre_2 varchar(16),
     genre_3 varchar(16),
-    release_date datetime,
+    release_date year,
     PRIMARY KEY (song_prop_id)
 )
 

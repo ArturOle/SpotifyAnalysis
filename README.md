@@ -61,4 +61,13 @@ or
 | Exemplary Spotify Recommendations | https://www.kaggle.com/datasets/bricevergnou/spotify-recommendation |
 | Spotify Charts | https://www.kaggle.com/datasets/dhruvildave/spotify-charts |
 
-
+0.0037 2022
+0.0031 2021
+0.0032 2020
+0.0033 2019
+0.0034 2019
+0.0036 2017
+0.0038 2016
+0.004 2015
+0.0045 2014
+0.00521 2013
