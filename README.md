@@ -58,21 +58,5 @@ or
 | ---- | ---- |
 | Spotify daily top 200 (2017-2021) | https://www.kaggle.com/datasets/ivannatarov/spotify-daily-top-200-songs-with-genres-20172021 |
 | Spotify top 100 (2015-2019) | https://www.kaggle.com/datasets/muhmores/spotify-top-100-songs-of-20152019?select=Spotify+2010+-+2019+Top+100.csv |
-| Exemplary Spotify Recommendations | https://www.kaggle.com/datasets/bricevergnou/spotify-recommendation |
 | Spotify Charts | https://www.kaggle.com/datasets/dhruvildave/spotify-charts |
-
-0.0037 2022
-0.0031 2021
-0.0032 2020
-0.0033 2019
-0.0034 2019
-0.0036 2017
-0.0038 2016
-0.004 2015
-0.0058 2014
-0.0061 2013
-0.0054 2012
-0.006 2011
-2010
-
 
