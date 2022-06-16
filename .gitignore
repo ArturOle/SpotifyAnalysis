@@ -2,5 +2,4 @@
 ./datasets
 ./__pycache__
 *.csv
-*.db
 *.pyc

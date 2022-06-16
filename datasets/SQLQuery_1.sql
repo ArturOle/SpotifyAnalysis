@@ -3,24 +3,26 @@
 CREATE TABLE Revenues(
     song_id int,
     song_prop_id int,
-    pricing_id int,
     artist_id int,
+    year int,
     profit int,
     streams int,
     song_name varchar(32),
+    
 
     FOREIGN KEY (song_prop_id) REFERENCES SongProps(song_prop_id),
     FOREIGN KEY (song_id) REFERENCES Tops(song_id),
-    FOREIGN KEY (pricing_id) REFERENCES Pricing(pricing_id),
+    FOREIGN KEY (year) REFERENCES Pricing(year),
     FOREIGN KEY (artist_id) REFERENCES Artists(artist_id)
-)
+
+);
 
 CREATE TABLE Artists(
     artist_id int not null,
     artist_name varchar(32) not null,
     main_genre varchar(16) not null,
     PRIMARY KEY (artist_id)
-)
+);
 
 CREATE TABLE SongProps(
     song_prop_id int not NULL,
@@ -43,18 +45,17 @@ CREATE TABLE SongProps(
     release_year year,
     top_year year,
     PRIMARY KEY (song_prop_id)
-)
+);
 
 CREATE TABLE Tops(
     song_id int not null,
     song_position int not null,
     creation_date datetime,
     PRIMARY KEY (song_id)
-)
+);
 
 CREATE TABLE Pricing(
-    pricing_id int not null,
+    year int not null,
     price_per_stream FLOAT,
-    year int,
-    PRIMARY KEY (pricing_id)
-)
+    PRIMARY KEY (year)
+);
