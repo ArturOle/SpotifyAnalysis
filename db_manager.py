@@ -48,7 +48,7 @@ class Server:
 
     def load_csv(self, csv_name, separator=','):
         csv_file = pd.read_csv(csv_name, sep=separator)
-        csv_file.to_sql(csv_name, self.connection, if_exists="replace")
+        csv_file.to_sql(csv_name[:-4], self.connection, if_exists="replace")
 
     def export_json(self, table_name):
         pass
