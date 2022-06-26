@@ -14,7 +14,6 @@ CREATE TABLE Revenues(
     FOREIGN KEY (song_id) REFERENCES Tops(song_id),
     FOREIGN KEY (year) REFERENCES Pricing(year),
     FOREIGN KEY (artist_id) REFERENCES Artists(artist_id)
-
 );
 
 CREATE TABLE Artists(
