@@ -29,7 +29,7 @@ CREATE TABLE SongProps(
     dnce int(4),
     dB int(4),
     live int(4),
-    bmp int(4),
+    bpm int(4),
     val int(4),
     acous int(4),
     spch int(4),
